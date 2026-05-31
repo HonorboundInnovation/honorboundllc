@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Honorbound Innovation, LLC builds practical, resilient technology for people and organizations that need systems they can trust."
+    />
+    <meta name="theme-color" content="#111827" />
+    <title>Honorbound Innovation, LLC</title>
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="eyebrow">Honorbound Innovation, LLC</p>
+          <h1 id="hero-title">Technology built with discipline, clarity, and nerve.</h1>
+          <p class="lede">
+            We design and build practical software systems, automation, and technical strategy for teams that need reliable tools without the ceremony theater.
+          </p>
+          <div class="hero__actions" aria-label="Primary actions">
+            <a class="button button--primary" href="mailto:contact@honorboundinnovation.com">Contact us</a>
+            <a class="button button--secondary" href="#capabilities">Explore capabilities</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Honorbound Innovation overview">
+          <img
+            class="hero-card__image"
+            src="assets/vegvisir_header.png"
+            alt="Honorbound Innovation visual header"
+            onerror="this.closest('.hero-card').classList.add('hero-card--image-missing'); this.remove();"
+          />
+          <div class="hero-card__fallback" aria-hidden="true">
+            <span>HI</span>
+          </div>
+          <p>Software. Automation. Systems thinking. No nonsense.</p>
+        </aside>
+      </section>
+
+      <section id="capabilities" class="section" aria-labelledby="capabilities-title">
+        <p class="eyebrow">Capabilities</p>
+        <h2 id="capabilities-title">What we help build</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Custom software</h3>
+            <p>Purpose-built applications, internal tools, integrations, and prototypes that solve the actual problem in front of you.</p>
+          </article>
+          <article class="card">
+            <h3>Automation & operations</h3>
+            <p>Workflow automation, data movement, deployment support, and process cleanup for teams tired of duct tape rituals.</p>
+          </article>
+          <article class="card">
+            <h3>Technical strategy</h3>
+            <p>Architecture review, modernization planning, implementation guidance, and straight answers before the machinery eats the room.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--split" aria-labelledby="approach-title">
+        <div>
+          <p class="eyebrow">Approach</p>
+          <h2 id="approach-title">Pragmatic by default</h2>
+        </div>
+        <p>
+          Honorbound Innovation focuses on clear requirements, maintainable systems, honest constraints, and shipping work that can survive contact with real operations.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Honorbound Innovation, LLC. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
