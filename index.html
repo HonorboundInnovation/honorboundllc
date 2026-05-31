@@ -26,6 +26,7 @@
         </a>
         <div class="nav__links">
           <a href="#what">What it is</a>
+          <a href="#screenshots">Screenshots</a>
           <a href="#runtime">Runtime</a>
           <a href="#memory">Memory</a>
           <a href="#subagents">Subagents</a>
@@ -60,6 +61,33 @@
           <p>
             The harness is designed around the loop that matters: orient from evidence, plan the next move, execute with tools, verify the result, and report what changed. It is built for repository maintenance, feature work, debugging, documentation, operations, migrations, and security-aware review.
           </p>
+        </div>
+      </section>
+
+      <section id="screenshots" class="section screenshot-section" aria-labelledby="screenshots-title">
+        <div class="section__heading section__heading--wide">
+          <p class="eyebrow">Screenshots</p>
+          <h2 id="screenshots-title">Vegvisir in the middle of actual work.</h2>
+          <p>
+            These are not mockups. They show the terminal UI running real sessions: long-context project work, command palette navigation, tool activity, saved session logs, and the transcript as the operational record.
+          </p>
+        </div>
+
+        <div class="screenshot-gallery" aria-label="Vegvisir product screenshots">
+          <figure class="screenshot-frame screenshot-frame--wide">
+            <img src="assets/screenshots/vegvisir-preview-1.jpg" alt="Vegvisir terminal session showing verification notes, tool logs, and saved session state" loading="lazy" />
+            <figcaption>Verification and memory in one view: test results, project notes, tool calls, and session state stay visible instead of disappearing after the answer.</figcaption>
+          </figure>
+
+          <figure class="screenshot-frame">
+            <img src="assets/screenshots/vegvisir-preview-2.jpg" alt="Vegvisir command palette showing agent, approvals, attach, auth, branch, and context commands" loading="lazy" />
+            <figcaption>The command palette turns the harness into a control surface for agents, approvals, auth, context preparation, diffs, and workspace actions.</figcaption>
+          </figure>
+
+          <figure class="screenshot-frame">
+            <img src="assets/screenshots/vegvisir-preview-3.jpg" alt="Vegvisir session showing an agent response, tool activity, saved notes, and message composer" loading="lazy" />
+            <figcaption>The transcript is the workbench: user intent, agent reasoning summaries, tool output, notes, and the next message all live in the same operational flow.</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -158,7 +186,7 @@ report  clean tree, deployed change tracked</code></pre>
             <span>03</span>
             <div>
               <h3>Transcript visibility</h3>
-              <p>Subagent updates are mirrored into the parent transcript, including captured output, so delegated work does not vanish into a side channel. No missing little gremlin footprints.</p>
+              <p>Subagent updates are mirrored into the parent transcript, including captured output, so delegated work does not vanish into a side channel. No missing phantom footprints.</p>
             </div>
           </li>
         </ol>
