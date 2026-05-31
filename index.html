@@ -5,63 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Honorbound Innovation, LLC builds practical, resilient technology for people and organizations that need systems they can trust."
+      content="Honorbound Innovation, LLC designs practical software, automation, and resilient technical systems for organizations that need clarity, execution, and trust."
     />
-    <meta name="theme-color" content="#111827" />
+    <meta name="theme-color" content="#0b1020" />
     <title>Honorbound Innovation, LLC</title>
+    <link rel="preload" href="assets/vegvisir_header.png" as="image" />
     <link rel="preload" href="styles.css" as="style" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="page-shell">
+    <header class="site-header" aria-label="Honorbound Innovation site header">
+      <div class="legacy-header">
+        <img src="assets/vegvisir_header.png" alt="Honorbound Innovation legacy header artwork" />
+      </div>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Honorbound Innovation home">
+          <span class="brand__mark">HI</span>
+          <span>Honorbound Innovation</span>
+        </a>
+        <div class="nav__links">
+          <a href="#capabilities">Capabilities</a>
+          <a href="#approach">Approach</a>
+          <a href="mailto:contact@honorboundinnovation.com">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero__content">
-          <p class="eyebrow">Honorbound Innovation, LLC</p>
-          <h1 id="hero-title">Technology built with discipline, clarity, and nerve.</h1>
-          <p class="lede">
-            We design and build practical software systems, automation, and technical strategy for teams that need reliable tools without the ceremony theater.
-          </p>
-          <div class="hero__actions" aria-label="Primary actions">
-            <a class="button button--primary" href="mailto:contact@honorboundinnovation.com">Contact us</a>
-            <a class="button button--secondary" href="#capabilities">Explore capabilities</a>
-          </div>
-        </div>
-
-        <aside class="hero-card" aria-label="Honorbound Innovation overview">
-          <div class="hero-card__fallback" aria-hidden="true">
-            <span>HI</span>
-          </div>
-          <p>Software. Automation. Systems thinking. No nonsense.</p>
-        </aside>
-      </section>
-
-      <section id="capabilities" class="section" aria-labelledby="capabilities-title">
-        <p class="eyebrow">Capabilities</p>
-        <h2 id="capabilities-title">What we help build</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>Custom software</h3>
-            <p>Purpose-built applications, internal tools, integrations, and prototypes that solve the actual problem in front of you.</p>
-          </article>
-          <article class="card">
-            <h3>Automation & operations</h3>
-            <p>Workflow automation, data movement, deployment support, and process cleanup for teams tired of duct tape rituals.</p>
-          </article>
-          <article class="card">
-            <h3>Technical strategy</h3>
-            <p>Architecture review, modernization planning, implementation guidance, and straight answers before the machinery eats the room.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section--split" aria-labelledby="approach-title">
-        <div>
-          <p class="eyebrow">Approach</p>
-          <h2 id="approach-title">Pragmatic by default</h2>
-        </div>
-        <p>
-          Honorbound Innovation focuses on clear requirements, maintainable systems, honest constraints, and shipping work that can survive contact with real operations.
+        <p class="eyebrow">Honorbound Innovation, LLC</p>
+        <h1 id="hero-title">Elegant systems for serious work.</h1>
+        <p class="lede">
+          We build practical software, automation, and technical strategy for teams that need dependable systems, clear decisions, and execution without ceremony theater.
         </p>
+        <div class="hero__actions" aria-label="Primary actions">
+          <a class="button button--primary" href="mailto:contact@honorboundinnovation.com">Start a conversation</a>
+          <a class="button button--quiet" href="#capabilities">See what we do</a>
+        </div>
+      </section>
+
+      <section id="capabilities" class="section section--ruled" aria-labelledby="capabilities-title">
+        <div class="section__intro">
+          <p class="eyebrow">Capabilities</p>
+          <h2 id="capabilities-title">Technology shaped around the mission.</h2>
+        </div>
+
+        <div class="service-list" aria-label="Honorbound Innovation capabilities">
+          <article class="service-row">
+            <span class="service-row__number">01</span>
+            <div>
+              <h3>Custom software</h3>
+              <p>Applications, internal tools, integrations, and prototypes built to solve the real operational problem instead of decorating around it.</p>
+            </div>
+          </article>
+
+          <article class="service-row">
+            <span class="service-row__number">02</span>
+            <div>
+              <h3>Automation & operations</h3>
+              <p>Workflow automation, deployment support, data movement, and process cleanup for teams that are done feeding the duct-tape machine.</p>
+            </div>
+          </article>
+
+          <article class="service-row">
+            <span class="service-row__number">03</span>
+            <div>
+              <h3>Technical strategy</h3>
+              <p>Architecture review, modernization planning, implementation guidance, and direct answers before complexity eats the room.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="approach" class="section statement" aria-labelledby="approach-title">
+        <p class="eyebrow">Approach</p>
+        <h2 id="approach-title">Disciplined. Clear. Built to last.</h2>
+        <p>
+          Honorbound Innovation favors maintainable systems, honest constraints, secure foundations, and measured delivery. The goal is not noise. The goal is technology that survives contact with real work.
+        </p>
+      </section>
+
+      <section class="section contact-band" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Bring the hard problem.</h2>
+        </div>
+        <a class="button button--primary" href="mailto:contact@honorboundinnovation.com">contact@honorboundinnovation.com</a>
       </section>
     </main>
 
