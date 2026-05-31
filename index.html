@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Vegvisir is an agentic development harness for building, testing, operating, and coordinating software work with tools, memory, skills, and subagents."
+      content="Vegvisir is a local-first agentic software development harness with tool execution, CMS/ECM memory, HBSE secrets, skills, subagents, transcript logging, and verification-first repository work."
     />
     <meta name="theme-color" content="#07111f" />
-    <title>Vegvisir | Agentic Development Harness</title>
+    <title>Vegvisir | Agentic Software Development Harness</title>
     <link rel="preload" href="assets/vegvisir_header.png" as="image" />
     <link rel="preload" href="styles.css" as="style" />
     <link rel="stylesheet" href="styles.css" />
@@ -25,96 +25,198 @@
           <span>Vegvisir</span>
         </a>
         <div class="nav__links">
-          <a href="#launch">Launch</a>
-          <a href="#features">Features</a>
-          <a href="#workflow">Workflow</a>
-          <a href="#status">Status</a>
+          <a href="#what">What it is</a>
+          <a href="#runtime">Runtime</a>
+          <a href="#memory">Memory</a>
+          <a href="#subagents">Subagents</a>
+          <a href="#github">GitHub</a>
         </div>
       </nav>
     </header>
 
     <main id="top">
-      <section id="launch" class="hero" aria-labelledby="hero-title">
-        <p class="eyebrow">Feature launch</p>
-        <h1 id="hero-title">Vegvisir turns software work into an agentic command center.</h1>
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Vegvisir feature launch</p>
+        <h1 id="hero-title">An agentic development harness that actually works inside the repo.</h1>
         <p class="lede">
-          A local-first development harness for coordinating model providers, project tools, durable memory, skills, subagents, tests, and real repository work from one focused runtime.
+          Vegvisir is not a floating chat box with a motivational sticker. It is a local-first software workbench where an AI agent can inspect files, edit code, run bounded commands, use durable project memory, coordinate subagents, verify results, and keep the transcript honest.
         </p>
         <div class="hero__actions" aria-label="Primary actions">
-          <a class="button button--primary" href="#features">Explore features</a>
-          <a class="button button--quiet" href="#workflow">See the workflow</a>
+          <a class="button button--primary" href="https://github.com/Honorbound-Innovation/Vegvisir-harness" rel="noreferrer">View the harness</a>
+          <a class="button button--quiet" href="#runtime">How it works</a>
         </div>
       </section>
 
-      <section id="features" class="section section--split" aria-labelledby="features-title">
+      <section id="what" class="section section--split" aria-labelledby="what-title">
         <div class="section__heading">
-          <p class="eyebrow">Core capabilities</p>
-          <h2 id="features-title">Built for real projects, not toy prompts.</h2>
+          <p class="eyebrow">What Vegvisir is</p>
+          <h2 id="what-title">A command center for model-assisted software work.</h2>
+        </div>
+
+        <div class="plain-copy">
+          <p>
+            Vegvisir wraps a model provider in a real engineering runtime. The assistant is given an active workspace, a tool registry, a policy boundary, project memory, and a transcript. That means it can do practical work instead of merely describing work.
+          </p>
+          <p>
+            The harness is designed around the loop that matters: orient from evidence, plan the next move, execute with tools, verify the result, and report what changed. It is built for repository maintenance, feature work, debugging, documentation, operations, migrations, and security-aware review.
+          </p>
+        </div>
+      </section>
+
+      <section id="screens" class="section" aria-labelledby="screens-title">
+        <div class="section__heading section__heading--wide">
+          <p class="eyebrow">Screenshots</p>
+          <h2 id="screens-title">A working harness, not a mockup.</h2>
+          <p class="section-kicker">These previews show Vegvisir in its natural habitat: a live development session with transcript context, tool-backed work, and repository operations visible instead of hidden behind vague automation dust.</p>
+        </div>
+
+        <div class="screenshot-grid">
+          <figure class="screenshot-shot screenshot-shot--large">
+            <img src="assets/screenshots/vegvisir-preview-1.jpg" alt="Vegvisir development harness interface preview" loading="lazy" />
+            <figcaption>Session cockpit: conversation, context, and workspace work in one place.</figcaption>
+          </figure>
+
+          <figure class="screenshot-shot">
+            <img src="assets/screenshots/vegvisir-preview-2.jpg" alt="Vegvisir tool and transcript workflow preview" loading="lazy" />
+            <figcaption>Tool use and transcript state stay visible while the work moves forward.</figcaption>
+          </figure>
+
+          <figure class="screenshot-shot">
+            <img src="assets/screenshots/vegvisir-preview-3.jpg" alt="Vegvisir project execution and verification preview" loading="lazy" />
+            <figcaption>Repository changes, verification, commits, and pushes are treated as first-class work.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="runtime" class="section" aria-labelledby="runtime-title">
+        <div class="section__heading section__heading--wide">
+          <p class="eyebrow">Runtime model</p>
+          <h2 id="runtime-title">The model thinks. Vegvisir gives it hands, memory, and rules.</h2>
+        </div>
+
+        <div class="feature-grid" aria-label="Vegvisir runtime capabilities">
+          <article class="feature-item">
+            <span>01</span>
+            <h3>Workspace-scoped tools</h3>
+            <p>Read files, write files, list project paths, run allow-listed commands, execute tests, compile skill bundles, and inspect output without pretending.</p>
+          </article>
+          <article class="feature-item">
+            <span>02</span>
+            <h3>Policy-aware execution</h3>
+            <p>Risky operations stay behind runtime policy, approval gates, sandbox boundaries, and explicit user authority. Capable does not mean feral.</p>
+          </article>
+          <article class="feature-item">
+            <span>03</span>
+            <h3>Verification-first workflow</h3>
+            <p>Vegvisir is built to run checks before claiming success: tests, builds, render passes, git status, diff review, and targeted diagnostics.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section console-section" aria-labelledby="console-title">
+        <div>
+          <p class="eyebrow">Working loop</p>
+          <h2 id="console-title">Every serious answer should have a trail.</h2>
+          <p>
+            Vegvisir surfaces tool activity, file changes, command results, subagent updates, and verification status so the session does not collapse into “trust me, bro.” The transcript becomes the operational record.
+          </p>
+        </div>
+
+        <figure class="terminal-shot" aria-label="Illustrated Vegvisir transcript excerpt">
+          <figcaption>Vegvisir session trace</figcaption>
+          <pre><code>orient  workspace=/mnt/storage/Projects/honorboundllc
+inspect git status --short --branch
+edit    index.html styles.css
+verify  local refs, old copy, chromium render
+commit  2caf778 Update Vegvisir GitHub link
+push    main -&gt; origin/main
+report  clean tree, deployed change tracked</code></pre>
+        </figure>
+      </section>
+
+      <section id="memory" class="section section--split section--accent" aria-labelledby="memory-title">
+        <div class="section__heading">
+          <p class="eyebrow">Memory and context</p>
+          <h2 id="memory-title">CMS remembers. ECM decides what enters the room.</h2>
         </div>
 
         <div class="text-stack">
           <div class="text-block">
-            <h3>Tool-forward execution</h3>
-            <p>Inspect files, edit code, run commands, test changes, summarize diffs, and keep work grounded in evidence from the active workspace.</p>
+            <h3>CMS-v2 durable memory</h3>
+            <p>Project facts, decisions, repo roots, user preferences, and task continuity can be stored outside the model context window so important details survive the next session.</p>
           </div>
 
           <div class="text-block">
-            <h3>Project memory and context</h3>
-            <p>Use CMS and ECM to recall durable project facts, expose only the context needed for the current task, and avoid losing decisions between sessions.</p>
+            <h3>ECM active context exposure</h3>
+            <p>Vegvisir does not dump the entire attic into every prompt. ECM prepares the relevant working context for the current turn while respecting budget and scope.</p>
           </div>
 
           <div class="text-block">
-            <h3>Subagents with trace logging</h3>
-            <p>Delegate bounded review, reconnaissance, testing, and design critique while preserving subagent activity in the transcript so the work does not disappear into the walls.</p>
-          </div>
-
-          <div class="text-block">
-            <h3>Skills, providers, and secure boundaries</h3>
-            <p>Route specialized workflows through reusable skills, switch model providers when configured, and keep credentials behind secret references instead of plaintext chat.</p>
+            <h3>HBSE secret boundary</h3>
+            <p>Credentials belong behind brokered secret references, not plaintext chat. Vegvisir’s design keeps auth handling separate from model-visible memory and conversation text.</p>
           </div>
         </div>
       </section>
 
-      <section id="workflow" class="section" aria-labelledby="workflow-title">
+      <section id="subagents" class="section" aria-labelledby="subagents-title">
         <div class="section__heading section__heading--wide">
-          <p class="eyebrow">Workflow</p>
-          <h2 id="workflow-title">Orient, plan, execute, verify, and ship.</h2>
+          <p class="eyebrow">Subagents</p>
+          <h2 id="subagents-title">Parallel review without losing the evidence.</h2>
         </div>
 
         <ol class="process-list">
           <li>
             <span>01</span>
             <div>
-              <h3>Understand the workspace</h3>
-              <p>Vegvisir starts from the repository, active project memory, current tools, and the user’s actual goal.</p>
+              <h3>Bounded delegation</h3>
+              <p>Child agents can be assigned narrow goals, file scopes, budgets, allowed tools, and maximum steps for reconnaissance, testing, documentation review, or design critique.</p>
             </div>
           </li>
           <li>
             <span>02</span>
             <div>
-              <h3>Do the work with tools</h3>
-              <p>The harness can inspect source, write files, run bounded commands, coordinate child agents, and keep the transcript informed.</p>
+              <h3>Board-backed coordination</h3>
+              <p>Subagent records are written to a durable board with status, goal, workspace, file scope, budget, checkpoint, final answer, and error state.</p>
             </div>
           </li>
           <li>
             <span>03</span>
             <div>
-              <h3>Verify before claiming victory</h3>
-              <p>Focused tests, build checks, render passes, and diff review keep the output honest before changes are committed or pushed.</p>
+              <h3>Transcript visibility</h3>
+              <p>Subagent updates are mirrored into the parent transcript, including captured output, so delegated work does not vanish into a side channel. No missing little gremlin footprints.</p>
             </div>
           </li>
         </ol>
       </section>
 
-      <section id="status" class="section launch-band" aria-labelledby="status-title">
+      <section class="section feature-strip" aria-label="Vegvisir feature highlights">
+        <div>
+          <strong>Tools</strong>
+          <span>files, commands, tests, git, render checks</span>
+        </div>
+        <div>
+          <strong>Skills</strong>
+          <span>reusable workflow knowledge and CLI help bundles</span>
+        </div>
+        <div>
+          <strong>Providers</strong>
+          <span>model adapters selected by configuration</span>
+        </div>
+        <div>
+          <strong>Trace</strong>
+          <span>visible progress, diffs, logs, and verification</span>
+        </div>
+      </section>
+
+      <section id="github" class="section launch-band" aria-labelledby="github-title">
         <div>
           <p class="eyebrow">Launch status</p>
-          <h2 id="status-title">Now forming: the developer cockpit for serious agentic work.</h2>
+          <h2 id="github-title">Built for the messy middle where software actually gets made.</h2>
           <p>
-            Vegvisir is being shaped as a practical control surface for software development, automation, memory-aware assistance, and multi-agent project execution.
+            Vegvisir is being shaped as a serious control surface for agentic development: direct implementation, evidence-seeking behavior, durable memory, safe credential boundaries, and enough tooling to move real projects forward.
           </p>
         </div>
-        <a class="button button--primary" href="https://github.com/Honorbound-Innovation/Vegvisir-harness" rel="noreferrer">View GitHub</a>
+        <a class="button button--primary" href="https://github.com/Honorbound-Innovation/Vegvisir-harness" rel="noreferrer">Open GitHub</a>
       </section>
     </main>
 
